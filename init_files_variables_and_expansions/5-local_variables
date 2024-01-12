@@ -1,2 +1,2 @@
 #!/bin/bash
-set env typeset -f
+set
