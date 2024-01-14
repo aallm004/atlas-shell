@@ -2,8 +2,8 @@
 # Changing particular loop iterations in bash
 
 count=1
-while [ $count -lt 21]; do
-	echo $count
+while [ "$count" -lt 21]; do
+	echo "$count"
 	case "$count" in
 		4)
 			echo "$count and then back luck from China"
