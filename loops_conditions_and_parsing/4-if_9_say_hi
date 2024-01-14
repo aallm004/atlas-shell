@@ -8,7 +8,7 @@ while [ $counter -lt 10 ]; do
 	else
 		echo "Best School"
 	fi
-	let counter=$(( Best School +1))
+	let counter=$(( Best School ))
 	
 
 done
