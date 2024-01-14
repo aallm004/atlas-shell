@@ -14,7 +14,7 @@ while [ $count -le 20]; do
 			echo "$count and then back luck from Italy"
 			;;
 		*)
-			echo $count
+			echo "$count"
 			;;
 	esac
 
