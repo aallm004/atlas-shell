@@ -14,7 +14,8 @@ while [ $count -lt 21 ]; do
 		"17")
 			echo "$count and then bad luck from Italy"
 			;;
-	esac
+		*)	
+			echo $count
 
 	((count++))
 done
