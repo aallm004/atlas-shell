@@ -2,7 +2,7 @@
 # Changing particular loop iterations in bash
 
 count=1
-while [ "$count" -lt 21]; do
+while [ "$count" -lt 21 ]; do
 	echo $count
 	case "$count" in
 		"4")
