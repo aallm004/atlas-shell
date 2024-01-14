@@ -6,13 +6,13 @@ while [ "$count" -lt 21]; do
 	echo $count
 	case "$count" in
 		"4")
-			echo "$count and then back luck from China"
+			echo "$count and then bad luck from China"
 			;;
 		"9")
 			echo "$count and then bad luck from Japan"
 			;;
 		"17")
-			echo "$count and then back luck from Italy"
+			echo "$count and then bad luck from Italy"
 			;;
 	esac
 
