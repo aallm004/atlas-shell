@@ -3,7 +3,7 @@
 
 hours=0
 
-while [ $hours -lt 12 ]; do
+while [ $hours -lt 13 ]; do
     minutes=1
     while [ $minutes -le 59 ]; do
         printf "%02d:%02d\n" $hours $minutes
