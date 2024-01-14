@@ -2,5 +2,5 @@
 # Bash script that displays Best School 10 times  until
 until [ $counter -ge 10 ]; do
         echo "Best School"
-	((counter++))
+	let counter-=1
 done
