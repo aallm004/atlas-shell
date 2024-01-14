@@ -19,4 +19,5 @@ while [ $count -lt 21]; do
 			;;
 	esac
 
-((count++))
+	((count++))
+done
