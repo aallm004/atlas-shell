@@ -8,7 +8,7 @@ while [ $count -le 20]; do
 			echo "$count and then back luck from China"
 			;;
 		9)
-			echo '$count and then bad luck from Japan"
+			echo "$count and then bad luck from Japan"
 			;;
 		17)
 			echo "$count and then back luck from Italy"
