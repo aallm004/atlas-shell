@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 # write script that displays Best School 10 times w/ acception
-counter=0
-while [ $counter -lt 10 ]; do
-	if [ $counter -eq 8 ]
-	then
-		echo -e "Best School\nHi"
+count=1
+while [ $counter -le 10 ]; do
+	if [ $counter -eq 9 ]; then
+		echo "Best School"
+		echo "Hi"
 	else
 		echo "Best School"
 	fi
-	let counter=$(( Best School ))
+	
+	((count++))
 	
 
 done
