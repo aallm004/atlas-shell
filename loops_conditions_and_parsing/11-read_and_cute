@@ -1,4 +1,0 @@
-cat script
-while true;
-do echo;
-done
