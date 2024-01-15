@@ -10,4 +10,4 @@ while IFS=: read -r user_name _ user_id group_id _ home_directory command_shell;
 
     echo "The user ${user_name} is part of the ${group_id} gang, lives in ${home_directory} and rides ${command_shell}."
     echo "User ID's place is protected by the passcode ${password}, more info about the user here: ${user_info}"
-done
+done<"${passwd_file}"
