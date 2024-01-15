@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 # Making a story about /etc/passwd
 
-passwd_file="/etc/passwd"
-
-# Read the file line by line using while loop
-while IFS=: read -r user_name password user_id group_id home_directory command_shell; do
-   # Extract additional information from the file
-   password=${password}
-   user_info=$(getent passwd ${user_name})
-
-   # Display the information in the specified format
-   echo "The user ${user_name} is part of the ${group_id} gang, lives in ${home_directory} and rides ${command_shell}."
-   echo "User ID's place is protected by the passcode ${password}, more info about the user here: ${user_info}"
-done < "${passwd_file}"
+cat script
+while true;
+do echo;
+done
