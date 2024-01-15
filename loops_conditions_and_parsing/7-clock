@@ -9,6 +9,6 @@ while [ $hours -lt 13 ]; do
 	echo $minutes
 	let minutes+=1
     done
-    let (( .. ))
-    let (( .. ))
+    let minutes=1
+    let hours=0
 done
