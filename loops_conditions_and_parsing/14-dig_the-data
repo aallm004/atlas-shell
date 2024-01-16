@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# Bash script that groups visitors by IP and HTTP status etc
+log_file="apache-access.log"
+
+awk '{print $1, $9}' "$log_file" | sort | uniq -c | sort -nr | awk '{print $1, "IP:", $2, "HTTP Code:", $3}'# Bash script that groups visitors by IP and HTTP status etc
 
 awk '{print $1, $9}' access.log | sort | uniq -c | awk '{print $1, $2, $3}' | sort -rn
