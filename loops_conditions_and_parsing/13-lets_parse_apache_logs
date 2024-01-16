@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 #A simple parsing of Apache log access files.
-awk '{print $1, $9}' apache-access.log
+log_file="apache-access.log"
+
+awk '{print $1, $9}' "$apache-access.log" | sort | uniq -c | sort -nr | awk '{print "IP:", $2, "Status Code:", $3, "Count:", $1}'
