@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # displaying the time for 12 hours and 59 min with bash script
 
-hours=1
-
 while [ $hours -le 12 ]; do
-    minutes=0
+    hours=1
 
     while [ $minutes -le 59 ]; do
+	    minutes=0
         printf "%2d:%02d\n" $hours $minutes
         ((minutes++))
     done
