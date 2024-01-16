@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # Sorting data with parsed Apache logged file.
-log_file="apache-access.log"
+file_path="apache-access.log"
 
-awk '{print $1, $9}' "$log_file" | sort | uniq -c | sort -nr | awk '{print $1, "IP:", $2, "HTTP Code:", $3}'
+if [ -e "$file_path" ]; then
+
+    awk '{count[$1" "$9]++} END {for (item in count) print count[item], item}' "$file_path" | sort -nr
+else
+    echo "Error: $file_path does not exist."
+fi
