@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # displaying content of the file /etc/psswd
-passwd_file="/etc/passwd"
+file_path="/etc/passwd"
 
-if [ -e "$passwd_file" ]; then
+if [ -e "$file_path" ]; then
   
-    while IFS=: read -r username _ userid _ _ homedir _; do
+    while IFS=: read -r username _ userid _ homedir _; do
         echo "Username: $username"
         echo "User ID: $userid"
         echo "Home Directory: $homedir"
-    done < "$passwd_file"
+    done < "$file_path"
 else
-    echo "Error: /etc/passwd file not found."
+    echo "Error: $file_path does not exist."
 fi
