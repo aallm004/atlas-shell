@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #A simple parsing of Apache log access files.
 awk {print $1, $9} apache-access.log
-awk '{print $1, $9}' apache-access.log
+awk {print $1, $9} apache-access.log
